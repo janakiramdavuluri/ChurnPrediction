@@ -1,0 +1,34 @@
+{
+    "dataset_name": "Telco Customer Churn",
+    "train_shape": [
+        5634,
+        30
+    ],
+    "test_shape": [
+        1409,
+        30
+    ],
+    "numerical_features": [
+        "SeniorCitizen",
+        "tenure",
+        "MonthlyCharges",
+        "TotalCharges"
+    ],
+    "categorical_features": [
+        "gender",
+        "Partner",
+        "Dependents",
+        "PhoneService",
+        "MultipleLines",
+        "InternetService",
+        "OnlineSecurity",
+        "OnlineBackup",
+        "DeviceProtection",
+        "TechSupport",
+        "StreamingTV",
+        "StreamingMovies",
+        "Contract",
+        "PaperlessBilling",
+        "PaymentMethod"
+    ]
+}

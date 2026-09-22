@@ -1,0 +1,24 @@
+# Environments
+venv/
+env/
+__pycache__/
+.ipynb_checkpoints/
+
+# Ignore ALL data files
+#data/raw/*.csv
+data/processed/*.npy
+data/processed/*.csv
+# Ignore model artifacts
+models/*.pkl
+
+logs/
+outputs/
+
+.vscode/
+
+# Ignore MLflow tracking data and databases
+mlruns/
+mlflow.db
+
+# Ignore locally generated artifact plots and reports
+artifacts/
