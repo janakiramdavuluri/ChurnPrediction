@@ -73,7 +73,7 @@ def train_and_register_model():
             # artifact_path="random_forest_model",
             # artifact_path is deprecated in newer MLflow versions
             name="random_forest_model",
-            skops_trusted_types=["sklearn.tree._tree.Tree"] # Creates the registry entry
+            skops_trusted_types=["sklearn.tree._tree.Tree"]  # Creates the registry entry
         )
         
         print(f"[SUCCESS] Metrics logged: F1 = {metrics['f1_score']:.4f} | ROC-AUC = {metrics['roc_auc']:.4f}")

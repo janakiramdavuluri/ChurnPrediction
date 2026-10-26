@@ -1,0 +1,7 @@
+{
+    "stage": "Lab 8 - Model Quality Gate",
+    "metric": "f1_score",
+    "minimum_value": 0.5,
+    "actual_value": 0.6194,
+    "status": "PASSED"
+}
