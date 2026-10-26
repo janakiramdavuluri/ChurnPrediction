@@ -1,0 +1,38 @@
+data:
+  raw_path: "data/raw/WA_Fn-UseC_-Telco-Customer-Churn (1).csv"
+  processed_dir: "data/processed"
+  target_column: "Churn"
+  id_column: "customerID"
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+model:
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+  class_weight: "balanced"
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "Customer_Churn_Prediction"
+
+registry:
+  model_name: "CustomerChurnClassifier"
+  decision_metric: "f1_score"
+
+quality_gate:
+  metric: "f1_score"
+  minimum_value: 0.50
+
+paths:
+  preprocessor: "models/preprocessor.pkl"
+  model: "models/churn_model.pkl"
+  evaluation_report: "reports/evaluation_report.json"
+  quality_gate_report: "reports/quality_gate_report.json"
+  failure_report: "reports/failure_report.json"
+  inference_output: "outputs/inference_predictions.csv"
+
+lab9:
+  repetitions: 1
