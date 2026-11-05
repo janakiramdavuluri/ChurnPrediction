@@ -1,0 +1,10 @@
+{
+    "model_name": "CustomerChurnClassifier",
+    "model_version": "1",
+    "model_stage": "Production",
+    "run_id": "2f308f9f87d94ab68daae3cc0e139b8e",
+    "model_source": "models:/m-8104482bcaf645fc903f201b8861955d",
+    "model_id": "m-8104482bcaf645fc903f201b8861955d",
+    "preprocessor_artifact": "preprocessing_pipeline/preprocessor.pkl",
+    "source": "MLflow"
+}
